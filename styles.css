@@ -8,6 +8,9 @@ main{
     color: #605c5c;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 header{
     color: black;
@@ -34,4 +37,20 @@ header{
     border-top: 1px solid black;
     border-collapse: collapse;
     padding: 14px;
+}
+.second{
+    width: 80%;
+    height: 100%;
+    padding: 50px;
+    display: block;
+    margin-left: 310px;
+}
+ul{
+    padding-left: 30px;
+}
+li{
+    margin: 15px;
+}
+a {
+    color: blue;
 }
