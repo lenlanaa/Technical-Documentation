@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-main{
+
+main {
     font-family: "Open Sans", Arial, sans-serif;
     color: #605c5c;
     width: 100%;
@@ -12,45 +13,89 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
 }
-header{
+
+header {
     color: black;
     font-size: 30px;
     font-weight: 400;
     margin: 20px auto;
 }
-#title{
+
+#title {
     margin: unset;
+    padding: 15px 5px;
 }
-#navbar{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black ;
-    width: 300px;
-    max-width: 500px;
+
+#navbar {
     position: fixed;
-    top: 0;
-    left: 0;
+    width: 20%;
+    height: 100%;
+    border: 2px solid black;
 }
-#navbar a, #navbar header{
+
+nav li {
+    padding: 15px 0;
+    border-top: 1px solid black;
+}
+
+#navbar li a {
     text-decoration: none;
     color: black;
-    border-top: 1px solid black;
-    border-collapse: collapse;
-    padding: 14px;
+    padding: 30px 10px;
 }
-.second{
+
+.second {
     width: 80%;
     height: 100%;
     padding: 50px;
     display: block;
-    margin-left: 310px;
+    margin-left: 20%;
 }
-ul{
-    padding-left: 30px;
-}
-li{
-    margin: 15px;
-}
+
 a {
     color: blue;
+}
+
+.gray {
+    background-color: rgba(184, 175, 175, 0.225);
+    border-radius: 5px;
+    padding: 12px 15px;
+    margin: 20px auto;
+    font-size: small;
+    font-family: monospace;
+}
+
+.gray p {
+    padding: unset;
+    margin: 5px;
+}
+
+section article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+.main-section p {
+    line-height: 2.3;
+    font-size: 15px;
+    color: #4d4e53;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-style: normal;
+    margin-top: 5px;
+
+}
+
+.second li {
+    margin-left: 5%;
+}
+
+article {
+    padding-bottom: 5%;
+}
+
+@media (width < 768px) {
+    #navbar{
+        
+    }
 }
